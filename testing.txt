@@ -1,0 +1,36 @@
+
+All testcases are written in the same configuration file(config/bank_config.json) with specific information. Testcases include 6 banks.
+
+All results of testcases can be found in the log files.
+I generates the log file for each bank, each server and each client, and the master.
+
+In addition, to prove correctness, requests of each client for different bank are the same.
+So we can check whether different banks with different failue and extend situations can have the same results.
+
+
+FOR SERVER:
+Testcase 1 (in bank_config.json, bank1 and bank2): 
+handle duplicate request for transfer (retransmit same reply)
+handle InsufficientFunds for transfer (create account if new, update history at all servers,
+send reply from tail)
+successful transfer in absence of failures, with both banks receiving pseudo-random
+deposits and withdrawals from other clients while transfer is in progress.
+
+Testcase 2 (in bank_config.json, bank3 and bank4):  
+successful transfer when head of bank2 fails immediately after receiving the transfer
+request. to complete the transfer, a bank1 server needs to re-send the transfer request
+to the new head of bank2.
+
+Testcase 3 (in bank_config.json, bank5 and bank6):
+successful transfer when the bank1 server s1 that sends the transfer request to head of
+bank2 fails immediately after sending it, and head of bank2 fails immediately after
+receiving it. to complete the transfer, another bank1 server s1' needs to re-send the
+transfer request to the new head of bank2. (in the suggested design for the transfer
+operation, s1 is the original tail of bank1, and s1' is the predecessor of s1.)
+
+
+
+
+
+
+

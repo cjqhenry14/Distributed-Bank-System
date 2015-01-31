@@ -1,0 +1,45 @@
+(Wed Nov 12 01:30:37 2014) server 3 start! bank name:CHASE    chain length:3       
+(Wed Nov 12 01:30:37 2014) got connection with master
+(Wed Nov 12 01:30:37 2014) got connection from before: 3032
+(Wed Nov 12 01:30:37 2014) get all from pre, i am new tail
+(Wed Nov 12 01:30:39 2014) RECV #1:  type:getBalance reqID:3.1.1    accountNum:3101  
+(Wed Nov 12 01:30:39 2014) REPLY:  reqID:3.1.1    accountNum:0      outcome:Processed                  balance:0.00    
+(Wed Nov 12 01:30:39 2014) UPDATE#1. RECV #2:  type:deposit    reqID:3.1.2    accountNum:3101   amount:1000.50 
+(Wed Nov 12 01:30:39 2014) UPDATE BALANCE:  type:deposit    reqID:3.1.2    accountNum:3101   amount:1000.50 
+(Wed Nov 12 01:30:39 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:3.1.2    accountNum:3101  
+(Wed Nov 12 01:30:39 2014) delete#1 from sent
+(Wed Nov 12 01:30:39 2014) send ack#1 to pre server
+(Wed Nov 12 01:30:39 2014) REPLY:  reqID:3.1.2    accountNum:3101   outcome:Processed                  balance:1000.50 
+(Wed Nov 12 01:30:39 2014) UPDATE#2. RECV #1:  type:deposit    reqID:3.2.2    accountNum:3201   amount:100.00  
+(Wed Nov 12 01:30:39 2014) UPDATE BALANCE:  type:deposit    reqID:3.2.2    accountNum:3201   amount:100.00  
+(Wed Nov 12 01:30:39 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:3.2.2    accountNum:3201  
+(Wed Nov 12 01:30:39 2014) delete#2 from sent
+(Wed Nov 12 01:30:39 2014) send ack#2 to pre server
+(Wed Nov 12 01:30:39 2014) REPLY:  reqID:3.2.2    accountNum:3201   outcome:Processed                  balance:100.00  
+(Wed Nov 12 01:30:39 2014) UPDATE#3. RECV #2:  type:deposit    reqID:3.2.3    accountNum:3201   amount:100.00  
+(Wed Nov 12 01:30:39 2014) UPDATE BALANCE:  type:deposit    reqID:3.2.3    accountNum:3201   amount:100.00  
+(Wed Nov 12 01:30:39 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:3.2.3    accountNum:3201  
+(Wed Nov 12 01:30:39 2014) delete#3 from sent
+(Wed Nov 12 01:30:39 2014) send ack#3 to pre server
+(Wed Nov 12 01:30:39 2014) REPLY:  reqID:3.2.3    accountNum:3201   outcome:Processed                  balance:200.00  
+(Wed Nov 12 01:30:39 2014) UPDATE#4. RECV #3:  type:withdraw   reqID:3.1.3    accountNum:3101   amount:700.00  
+(Wed Nov 12 01:30:39 2014) UPDATE BALANCE:  type:withdraw   reqID:3.1.3    accountNum:3101   amount:700.00  
+(Wed Nov 12 01:30:39 2014) APPEND PROCESSED TRANS:  type:withdraw   reqID:3.1.3    accountNum:3101  
+(Wed Nov 12 01:30:39 2014) delete#4 from sent
+(Wed Nov 12 01:30:39 2014) send ack#4 to pre server
+(Wed Nov 12 01:30:39 2014) REPLY:  reqID:3.1.3    accountNum:3101   outcome:Processed                  balance:300.50  
+(Wed Nov 12 01:30:40 2014) UPDATE#5. RECV #3:  type:withdraw   reqID:3.2.7    accountNum:3202   amount:200.00  
+(Wed Nov 12 01:30:40 2014) delete#5 from sent
+(Wed Nov 12 01:30:40 2014) send ack#5 to pre server
+(Wed Nov 12 01:30:40 2014) REPLY:  reqID:3.2.7    accountNum:3202   outcome:InsufficientFunds          balance:0.00    
+(Wed Nov 12 01:30:40 2014) UPDATE#6. RECV #4:  type:deposit    reqID:3.1.2    accountNum:3101   amount:1000.50 
+(Wed Nov 12 01:30:40 2014) delete#6 from sent
+(Wed Nov 12 01:30:40 2014) send ack#6 to pre server
+(Wed Nov 12 01:30:40 2014) REPLY:  reqID:3.1.2    accountNum:3101   outcome:Processed                  balance:300.50  
+(Wed Nov 12 01:30:40 2014) UPDATE#7. RECV #4:  type:deposit    reqID:3.2.7    accountNum:3201   amount:200.00  
+(Wed Nov 12 01:30:40 2014) delete#7 from sent
+(Wed Nov 12 01:30:40 2014) send ack#7 to pre server
+(Wed Nov 12 01:30:40 2014) REPLY:  reqID:3.2.7    accountNum:3201   outcome:InconsistentWithHistory    balance:200.00  
+(Wed Nov 12 01:30:45 2014) pre:3032 died, new pre:3031
+(Wed Nov 12 01:30:45 2014) got connection from before: 3031
+(Wed Nov 12 01:30:45 2014) get sent larger than sn from 3031, #8

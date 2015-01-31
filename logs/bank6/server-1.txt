@@ -1,0 +1,66 @@
+(Wed Nov 26 12:16:37 2014) server 1 start! bank name:MS       chain length:2       
+(Wed Nov 26 12:16:37 2014) got connection with master
+(Wed Nov 26 12:16:37 2014) got connection from next server: 3062
+(Wed Nov 26 12:16:37 2014) send processed over
+(Wed Nov 26 12:16:37 2014) send inSufFundsTrans over
+(Wed Nov 26 12:16:37 2014) send sent over
+(Wed Nov 26 12:16:37 2014) send balance_map over
+(Wed Nov 26 12:16:37 2014) send all over
+(Wed Nov 26 12:16:39 2014) UPDATE#1. RECV #1:  type:deposit    reqID:6.1.7    accountNum:6101   amount:500.00  
+(Wed Nov 26 12:16:39 2014) UPDATE BALANCE:  type:deposit    reqID:6.1.7    accountNum:6101   amount:500.00   balance:500.00  
+(Wed Nov 26 12:16:39 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:6.1.7    accountNum:6101  
+(Wed Nov 26 12:16:39 2014) get ack (6.1.7) from next server
+(Wed Nov 26 12:16:39 2014) delete#1 from sent
+(Wed Nov 26 12:16:39 2014) UPDATE#2. RECV #2:  type:withdraw   reqID:6.1.10   accountNum:6101   amount:100.00  
+(Wed Nov 26 12:16:39 2014) UPDATE BALANCE:  type:withdraw   reqID:6.1.10   accountNum:6101   amount:100.00   balance:400.00  
+(Wed Nov 26 12:16:39 2014) APPEND PROCESSED TRANS:  type:withdraw   reqID:6.1.10   accountNum:6101  
+(Wed Nov 26 12:16:39 2014) get ack (6.1.10) from next server
+(Wed Nov 26 12:16:39 2014) delete#2 from sent
+(Wed Nov 26 12:16:40 2014) UPDATE#3. RECV #1:  type:deposit    reqID:6.2.2    accountNum:6202   amount:40.00   
+(Wed Nov 26 12:16:40 2014) UPDATE BALANCE:  type:deposit    reqID:6.2.2    accountNum:6202   amount:40.00    balance:40.00   
+(Wed Nov 26 12:16:40 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:6.2.2    accountNum:6202  
+(Wed Nov 26 12:16:40 2014) get ack (6.2.2) from next server
+(Wed Nov 26 12:16:40 2014) delete#3 from sent
+(Wed Nov 26 12:16:40 2014) UPDATE#4. RECV #2:  type:withdraw   reqID:6.2.1    accountNum:6202   amount:80.00   
+(Wed Nov 26 12:16:40 2014) get ack (6.2.1) from next server
+(Wed Nov 26 12:16:40 2014) delete#4 from sent
+(Wed Nov 26 12:16:40 2014) UPDATE#5. RECV #3:  type:withdraw   reqID:6.1.2    accountNum:6101   amount:400.00  
+(Wed Nov 26 12:16:40 2014) UPDATE BALANCE:  type:withdraw   reqID:6.1.2    accountNum:6101   amount:400.00   balance:0.00    
+(Wed Nov 26 12:16:40 2014) APPEND PROCESSED TRANS:  type:withdraw   reqID:6.1.2    accountNum:6101  
+(Wed Nov 26 12:16:40 2014) get ack (6.1.2) from next server
+(Wed Nov 26 12:16:40 2014) delete#5 from sent
+(Wed Nov 26 12:16:40 2014) UPDATE#6. RECV #3:  type:withdraw   reqID:6.2.1    accountNum:6202   amount:40.00   
+(Wed Nov 26 12:16:40 2014) get ack (6.2.1) from next server
+(Wed Nov 26 12:16:40 2014) delete#6 from sent
+(Wed Nov 26 12:16:40 2014) UPDATE#7. RECV #4:  type:withdraw   reqID:6.1.2    accountNum:6101   amount:100.00  
+(Wed Nov 26 12:16:40 2014) get ack (6.1.2) from next server
+(Wed Nov 26 12:16:40 2014) delete#7 from sent
+(Wed Nov 26 12:16:41 2014) UPDATE#8. RECV #5:  type:withdraw   reqID:6.1.1    accountNum:6101   amount:400.00  
+(Wed Nov 26 12:16:41 2014) get ack (6.1.1) from next server
+(Wed Nov 26 12:16:41 2014) delete#8 from sent
+(Wed Nov 26 12:16:41 2014) UPDATE#9. RECV #6:  type:deposit    reqID:6.1.8    accountNum:6101   amount:200.00  
+(Wed Nov 26 12:16:41 2014) UPDATE BALANCE:  type:deposit    reqID:6.1.8    accountNum:6101   amount:200.00   balance:200.00  
+(Wed Nov 26 12:16:41 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:6.1.8    accountNum:6101  
+(Wed Nov 26 12:16:41 2014) get ack (6.1.8) from next server
+(Wed Nov 26 12:16:41 2014) delete#9 from sent
+(Wed Nov 26 12:16:42 2014) UPDATE#10. RECV #6:  type:deposit    reqID:6.2.2    accountNum:6202   amount:20.00   
+(Wed Nov 26 12:16:42 2014) get ack (6.2.2) from next server
+(Wed Nov 26 12:16:42 2014) delete#10 from sent
+(Wed Nov 26 12:16:42 2014) UPDATE#11. RECV #7:  type:deposit    reqID:6.1.10   accountNum:6101   amount:100.00  
+(Wed Nov 26 12:16:42 2014) get ack (6.1.10) from next server
+(Wed Nov 26 12:16:42 2014) delete#11 from sent
+(Wed Nov 26 12:16:42 2014) UPDATE#12. RECV #7:  type:withdraw   reqID:6.2.1    accountNum:6201   amount:80.00   
+(Wed Nov 26 12:16:42 2014) get ack (6.2.1) from next server
+(Wed Nov 26 12:16:42 2014) delete#12 from sent
+(Wed Nov 26 12:16:42 2014) UPDATE#13. RECV #8:  type:withdraw   reqID:6.1.10   accountNum:6101   amount:300.00  
+(Wed Nov 26 12:16:42 2014) get ack (6.1.10) from next server
+(Wed Nov 26 12:16:42 2014) delete#13 from sent
+(Wed Nov 26 12:16:43 2014) UPDATE#14. RECV #8:  type:deposit    reqID:6.2.2    accountNum:6202   amount:60.00   
+(Wed Nov 26 12:16:43 2014) get ack (6.2.2) from next server
+(Wed Nov 26 12:16:43 2014) delete#14 from sent
+(Wed Nov 26 12:16:43 2014) UPDATE#15. RECV #9:  type:deposit    reqID:6.1.9    accountNum:6101   amount:500.00  
+(Wed Nov 26 12:16:43 2014) UPDATE BALANCE:  type:deposit    reqID:6.1.9    accountNum:6101   amount:500.00   balance:700.00  
+(Wed Nov 26 12:16:43 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:6.1.9    accountNum:6101  
+(Wed Nov 26 12:16:43 2014) get ack (6.1.9) from next server
+(Wed Nov 26 12:16:43 2014) delete#15 from sent
+(Wed Nov 26 12:16:43 2014) UPDATE#16. RECV #11:  type:transfer   reqID:5.1.8    accountNum:5101   amount:50.00    destBank:6   destAccount:6101  

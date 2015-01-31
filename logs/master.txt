@@ -1,0 +1,16 @@
+(Wed Nov 26 12:16:36 2014) get connection with server: 3051
+(Wed Nov 26 12:16:36 2014) current tail is:3051
+(Wed Nov 26 12:16:36 2014) get connection with server: 3052
+(Wed Nov 26 12:16:36 2014) current tail is:3051
+(Wed Nov 26 12:16:37 2014) get connection with server: 3061
+(Wed Nov 26 12:16:37 2014) current tail is:3061
+(Wed Nov 26 12:16:37 2014) get connection with server: 3062
+(Wed Nov 26 12:16:37 2014) current tail is:3061
+(Wed Nov 26 12:16:38 2014) BANK#5 CLIENT:5051 SET HEAD:3051 & TAIL:3052
+(Wed Nov 26 12:16:38 2014) BANK#5 CLIENT:5052 SET HEAD:3051 & TAIL:3052
+(Wed Nov 26 12:16:38 2014) BANK#6 CLIENT:5061 SET HEAD:3061 & TAIL:3062
+(Wed Nov 26 12:16:39 2014) BANK#6 CLIENT:5062 SET HEAD:3061 & TAIL:3062
+(Wed Nov 26 12:16:47 2014) tail server:3052 died, pre:3051
+(Wed Nov 26 12:16:47 2014) tell bank#6's head that bank#5's tail died
+(Wed Nov 26 12:16:48 2014) head server:3061 died, next:3062
+(Wed Nov 26 12:16:48 2014) tell bank#5's tail that bank#6's head died

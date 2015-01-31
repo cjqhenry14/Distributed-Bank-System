@@ -1,0 +1,191 @@
+(Wed Nov 26 12:14:48 2014) server 2 start! bank name:TD       chain length:2       
+(Wed Nov 26 12:14:48 2014) got connection with master
+(Wed Nov 26 12:14:48 2014) got connection from before: 3041
+(Wed Nov 26 12:14:48 2014) get all from pre, i am new tail
+(Wed Nov 26 12:14:50 2014) UPDATE#1. RECV #1:  type:deposit    reqID:4.1.7    accountNum:4101   amount:500.00  
+(Wed Nov 26 12:14:50 2014) UPDATE BALANCE:  type:deposit    reqID:4.1.7    accountNum:4101   amount:500.00   balance:500.00  
+(Wed Nov 26 12:14:50 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:4.1.7    accountNum:4101  
+(Wed Nov 26 12:14:50 2014) delete#1 from sent
+(Wed Nov 26 12:14:50 2014) send ack (4.1.7) to pre server
+(Wed Nov 26 12:14:50 2014) REPLY:  reqID:4.1.7    accountNum:4101   outcome:Processed                  balance:500.00  
+(Wed Nov 26 12:14:50 2014) UPDATE#2. RECV #2:  type:withdraw   reqID:4.1.10   accountNum:4101   amount:100.00  
+(Wed Nov 26 12:14:50 2014) UPDATE BALANCE:  type:withdraw   reqID:4.1.10   accountNum:4101   amount:100.00   balance:400.00  
+(Wed Nov 26 12:14:50 2014) APPEND PROCESSED TRANS:  type:withdraw   reqID:4.1.10   accountNum:4101  
+(Wed Nov 26 12:14:50 2014) delete#2 from sent
+(Wed Nov 26 12:14:50 2014) send ack (4.1.10) to pre server
+(Wed Nov 26 12:14:50 2014) REPLY:  reqID:4.1.10   accountNum:4101   outcome:Processed                  balance:400.00  
+(Wed Nov 26 12:14:50 2014) UPDATE#3. RECV #1:  type:deposit    reqID:4.2.2    accountNum:4202   amount:40.00   
+(Wed Nov 26 12:14:50 2014) UPDATE BALANCE:  type:deposit    reqID:4.2.2    accountNum:4202   amount:40.00    balance:40.00   
+(Wed Nov 26 12:14:50 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:4.2.2    accountNum:4202  
+(Wed Nov 26 12:14:50 2014) delete#3 from sent
+(Wed Nov 26 12:14:50 2014) send ack (4.2.2) to pre server
+(Wed Nov 26 12:14:50 2014) REPLY:  reqID:4.2.2    accountNum:4202   outcome:Processed                  balance:40.00   
+(Wed Nov 26 12:14:50 2014) UPDATE#4. RECV #2:  type:withdraw   reqID:4.2.1    accountNum:4202   amount:80.00   
+(Wed Nov 26 12:14:50 2014) delete#4 from sent
+(Wed Nov 26 12:14:50 2014) send ack (4.2.1) to pre server
+(Wed Nov 26 12:14:50 2014) REPLY:  reqID:4.2.1    accountNum:4202   outcome:InsufficientFunds          balance:40.00   
+(Wed Nov 26 12:14:51 2014) UPDATE#5. RECV #3:  type:withdraw   reqID:4.1.2    accountNum:4101   amount:400.00  
+(Wed Nov 26 12:14:51 2014) UPDATE BALANCE:  type:withdraw   reqID:4.1.2    accountNum:4101   amount:400.00   balance:0.00    
+(Wed Nov 26 12:14:51 2014) APPEND PROCESSED TRANS:  type:withdraw   reqID:4.1.2    accountNum:4101  
+(Wed Nov 26 12:14:51 2014) delete#5 from sent
+(Wed Nov 26 12:14:51 2014) send ack (4.1.2) to pre server
+(Wed Nov 26 12:14:51 2014) REPLY:  reqID:4.1.2    accountNum:4101   outcome:Processed                  balance:0.00    
+(Wed Nov 26 12:14:51 2014) UPDATE#6. RECV #3:  type:withdraw   reqID:4.2.1    accountNum:4202   amount:40.00   
+(Wed Nov 26 12:14:51 2014) delete#6 from sent
+(Wed Nov 26 12:14:51 2014) send ack (4.2.1) to pre server
+(Wed Nov 26 12:14:51 2014) REPLY:  reqID:4.2.1    accountNum:4202   outcome:InconsistentWithHistory    balance:40.00   
+(Wed Nov 26 12:14:51 2014) UPDATE#7. RECV #4:  type:withdraw   reqID:4.1.2    accountNum:4101   amount:100.00  
+(Wed Nov 26 12:14:51 2014) delete#7 from sent
+(Wed Nov 26 12:14:51 2014) send ack (4.1.2) to pre server
+(Wed Nov 26 12:14:51 2014) REPLY:  reqID:4.1.2    accountNum:4101   outcome:InconsistentWithHistory    balance:0.00    
+(Wed Nov 26 12:14:51 2014) RECV #4:  type:getBalance reqID:4.2.1    accountNum:4201  
+(Wed Nov 26 12:14:51 2014) REPLY:  reqID:4.2.1    accountNum:4201   outcome:Processed                  balance:0.00    
+(Wed Nov 26 12:14:52 2014) UPDATE#8. RECV #5:  type:withdraw   reqID:4.1.1    accountNum:4101   amount:400.00  
+(Wed Nov 26 12:14:52 2014) delete#8 from sent
+(Wed Nov 26 12:14:52 2014) send ack (4.1.1) to pre server
+(Wed Nov 26 12:14:52 2014) REPLY:  reqID:4.1.1    accountNum:4101   outcome:InsufficientFunds          balance:0.00    
+(Wed Nov 26 12:14:52 2014) RECV #5:  type:getBalance reqID:4.2.1    accountNum:4202  
+(Wed Nov 26 12:14:52 2014) REPLY:  reqID:4.2.1    accountNum:4202   outcome:Processed                  balance:40.00   
+(Wed Nov 26 12:14:52 2014) UPDATE#9. RECV #6:  type:deposit    reqID:4.1.8    accountNum:4101   amount:200.00  
+(Wed Nov 26 12:14:52 2014) UPDATE BALANCE:  type:deposit    reqID:4.1.8    accountNum:4101   amount:200.00   balance:200.00  
+(Wed Nov 26 12:14:52 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:4.1.8    accountNum:4101  
+(Wed Nov 26 12:14:52 2014) delete#9 from sent
+(Wed Nov 26 12:14:52 2014) send ack (4.1.8) to pre server
+(Wed Nov 26 12:14:52 2014) REPLY:  reqID:4.1.8    accountNum:4101   outcome:Processed                  balance:200.00  
+(Wed Nov 26 12:14:52 2014) UPDATE#10. RECV #6:  type:deposit    reqID:4.2.2    accountNum:4202   amount:20.00   
+(Wed Nov 26 12:14:52 2014) delete#10 from sent
+(Wed Nov 26 12:14:52 2014) send ack (4.2.2) to pre server
+(Wed Nov 26 12:14:52 2014) REPLY:  reqID:4.2.2    accountNum:4202   outcome:InconsistentWithHistory    balance:40.00   
+(Wed Nov 26 12:14:53 2014) UPDATE#11. RECV #7:  type:deposit    reqID:4.1.10   accountNum:4101   amount:100.00  
+(Wed Nov 26 12:14:53 2014) delete#11 from sent
+(Wed Nov 26 12:14:53 2014) send ack (4.1.10) to pre server
+(Wed Nov 26 12:14:53 2014) REPLY:  reqID:4.1.10   accountNum:4101   outcome:InconsistentWithHistory    balance:200.00  
+(Wed Nov 26 12:14:53 2014) UPDATE#12. RECV #7:  type:withdraw   reqID:4.2.1    accountNum:4201   amount:80.00   
+(Wed Nov 26 12:14:53 2014) delete#12 from sent
+(Wed Nov 26 12:14:53 2014) send ack (4.2.1) to pre server
+(Wed Nov 26 12:14:53 2014) REPLY:  reqID:4.2.1    accountNum:4201   outcome:InconsistentWithHistory    balance:0.00    
+(Wed Nov 26 12:14:53 2014) UPDATE#13. RECV #8:  type:withdraw   reqID:4.1.10   accountNum:4101   amount:300.00  
+(Wed Nov 26 12:14:53 2014) delete#13 from sent
+(Wed Nov 26 12:14:53 2014) send ack (4.1.10) to pre server
+(Wed Nov 26 12:14:53 2014) REPLY:  reqID:4.1.10   accountNum:4101   outcome:InconsistentWithHistory    balance:200.00  
+(Wed Nov 26 12:14:53 2014) UPDATE#14. RECV #8:  type:deposit    reqID:4.2.2    accountNum:4202   amount:60.00   
+(Wed Nov 26 12:14:53 2014) delete#14 from sent
+(Wed Nov 26 12:14:53 2014) send ack (4.2.2) to pre server
+(Wed Nov 26 12:14:53 2014) REPLY:  reqID:4.2.2    accountNum:4202   outcome:InconsistentWithHistory    balance:40.00   
+(Wed Nov 26 12:14:54 2014) UPDATE#15. RECV #9:  type:deposit    reqID:4.1.9    accountNum:4101   amount:500.00  
+(Wed Nov 26 12:14:54 2014) UPDATE BALANCE:  type:deposit    reqID:4.1.9    accountNum:4101   amount:500.00   balance:700.00  
+(Wed Nov 26 12:14:54 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:4.1.9    accountNum:4101  
+(Wed Nov 26 12:14:54 2014) delete#15 from sent
+(Wed Nov 26 12:14:54 2014) send ack (4.1.9) to pre server
+(Wed Nov 26 12:14:54 2014) REPLY:  reqID:4.1.9    accountNum:4101   outcome:Processed                  balance:700.00  
+(Wed Nov 26 12:14:58 2014) pre(head):3041 died, I am new head
+(Wed Nov 26 12:14:58 2014) UPDATE#1. RECV #11:  type:transfer   reqID:3.1.8    accountNum:3101   amount:50.00    destBank:4   destAccount:4101  
+(Wed Nov 26 12:14:58 2014) UPDATE BALANCE:  type:transfer   reqID:3.1.8    accountNum:4101   amount:50.00    balance:750.00  
+(Wed Nov 26 12:14:58 2014) APPEND PROCESSED TRANS:  type:transfer   reqID:3.1.8    accountNum:3101  
+(Wed Nov 26 12:14:58 2014) delete#1 from sent
+(Wed Nov 26 12:14:58 2014) send ack (3.1.8) to source bank
+(Wed Nov 26 12:15:03 2014) UPDATE#2. RECV #9:  type:deposit    reqID:4.2.2    accountNum:4202   amount:20.00   
+(Wed Nov 26 12:15:03 2014) delete#2 from sent
+(Wed Nov 26 12:15:03 2014) REPLY:  reqID:4.2.2    accountNum:4202   outcome:InconsistentWithHistory    balance:40.00   
+(Wed Nov 26 12:15:03 2014) UPDATE#3. RECV #10:  type:withdraw   reqID:4.2.2    accountNum:4201   amount:40.00   
+(Wed Nov 26 12:15:03 2014) delete#3 from sent
+(Wed Nov 26 12:15:03 2014) REPLY:  reqID:4.2.2    accountNum:4201   outcome:InconsistentWithHistory    balance:0.00    
+(Wed Nov 26 12:15:03 2014) UPDATE#4. RECV #10:  type:withdraw   reqID:4.1.9    accountNum:4101   amount:300.00  
+(Wed Nov 26 12:15:03 2014) delete#4 from sent
+(Wed Nov 26 12:15:03 2014) REPLY:  reqID:4.1.9    accountNum:4101   outcome:InconsistentWithHistory    balance:750.00  
+(Wed Nov 26 12:15:03 2014) UPDATE#5. RECV #11:  type:withdraw   reqID:4.1.10   accountNum:4101   amount:500.00  
+(Wed Nov 26 12:15:03 2014) delete#5 from sent
+(Wed Nov 26 12:15:03 2014) REPLY:  reqID:4.1.10   accountNum:4101   outcome:InconsistentWithHistory    balance:750.00  
+(Wed Nov 26 12:15:03 2014) UPDATE#6. RECV #11:  type:deposit    reqID:4.2.2    accountNum:4201   amount:40.00   
+(Wed Nov 26 12:15:03 2014) delete#6 from sent
+(Wed Nov 26 12:15:03 2014) REPLY:  reqID:4.2.2    accountNum:4201   outcome:InconsistentWithHistory    balance:0.00    
+(Wed Nov 26 12:15:04 2014) UPDATE#7. RECV #12:  type:withdraw   reqID:4.1.8    accountNum:4101   amount:500.00  
+(Wed Nov 26 12:15:04 2014) delete#7 from sent
+(Wed Nov 26 12:15:04 2014) REPLY:  reqID:4.1.8    accountNum:4101   outcome:InconsistentWithHistory    balance:750.00  
+(Wed Nov 26 12:15:04 2014) RECV #12:  type:getBalance reqID:4.2.2    accountNum:4202  
+(Wed Nov 26 12:15:04 2014) delete#0 from sent
+(Wed Nov 26 12:15:04 2014) REPLY:  reqID:4.2.2    accountNum:4202   outcome:Processed                  balance:40.00   
+(Wed Nov 26 12:15:04 2014) UPDATE#8. RECV #13:  type:deposit    reqID:4.1.2    accountNum:4101   amount:500.00  
+(Wed Nov 26 12:15:04 2014) delete#8 from sent
+(Wed Nov 26 12:15:04 2014) REPLY:  reqID:4.1.2    accountNum:4101   outcome:InconsistentWithHistory    balance:750.00  
+(Wed Nov 26 12:15:04 2014) UPDATE#9. RECV #13:  type:deposit    reqID:4.2.1    accountNum:4201   amount:60.00   
+(Wed Nov 26 12:15:04 2014) delete#9 from sent
+(Wed Nov 26 12:15:04 2014) REPLY:  reqID:4.2.1    accountNum:4201   outcome:InconsistentWithHistory    balance:0.00    
+(Wed Nov 26 12:15:05 2014) UPDATE#10. RECV #14:  type:withdraw   reqID:4.1.1    accountNum:4101   amount:400.00  
+(Wed Nov 26 12:15:05 2014) delete#10 from sent
+(Wed Nov 26 12:15:05 2014) REPLY:  reqID:4.1.1    accountNum:4101   outcome:InsufficientFunds          balance:750.00  
+(Wed Nov 26 12:15:05 2014) RECV #14:  type:getBalance reqID:4.2.2    accountNum:4202  
+(Wed Nov 26 12:15:05 2014) delete#0 from sent
+(Wed Nov 26 12:15:05 2014) REPLY:  reqID:4.2.2    accountNum:4202   outcome:Processed                  balance:40.00   
+(Wed Nov 26 12:15:05 2014) UPDATE#11. RECV #15:  type:deposit    reqID:4.1.6    accountNum:4101   amount:300.00  
+(Wed Nov 26 12:15:05 2014) UPDATE BALANCE:  type:deposit    reqID:4.1.6    accountNum:4101   amount:300.00   balance:1050.00 
+(Wed Nov 26 12:15:05 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:4.1.6    accountNum:4101  
+(Wed Nov 26 12:15:05 2014) delete#11 from sent
+(Wed Nov 26 12:15:05 2014) REPLY:  reqID:4.1.6    accountNum:4101   outcome:Processed                  balance:1050.00 
+(Wed Nov 26 12:15:05 2014) UPDATE#12. RECV #15:  type:deposit    reqID:4.2.2    accountNum:4201   amount:80.00   
+(Wed Nov 26 12:15:05 2014) delete#12 from sent
+(Wed Nov 26 12:15:05 2014) REPLY:  reqID:4.2.2    accountNum:4201   outcome:InconsistentWithHistory    balance:0.00    
+(Wed Nov 26 12:15:06 2014) UPDATE#13. RECV #16:  type:deposit    reqID:4.1.4    accountNum:4101   amount:200.00  
+(Wed Nov 26 12:15:06 2014) UPDATE BALANCE:  type:deposit    reqID:4.1.4    accountNum:4101   amount:200.00   balance:1250.00 
+(Wed Nov 26 12:15:06 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:4.1.4    accountNum:4101  
+(Wed Nov 26 12:15:06 2014) delete#13 from sent
+(Wed Nov 26 12:15:06 2014) REPLY:  reqID:4.1.4    accountNum:4101   outcome:Processed                  balance:1250.00 
+(Wed Nov 26 12:15:06 2014) UPDATE#14. RECV #16:  type:withdraw   reqID:4.2.1    accountNum:4202   amount:60.00   
+(Wed Nov 26 12:15:06 2014) delete#14 from sent
+(Wed Nov 26 12:15:06 2014) REPLY:  reqID:4.2.1    accountNum:4202   outcome:InconsistentWithHistory    balance:40.00   
+(Wed Nov 26 12:15:06 2014) UPDATE#15. RECV #17:  type:deposit    reqID:4.1.1    accountNum:4101   amount:400.00  
+(Wed Nov 26 12:15:06 2014) delete#15 from sent
+(Wed Nov 26 12:15:06 2014) REPLY:  reqID:4.1.1    accountNum:4101   outcome:InconsistentWithHistory    balance:1250.00 
+(Wed Nov 26 12:15:06 2014) UPDATE#16. RECV #17:  type:deposit    reqID:4.2.1    accountNum:4201   amount:60.00   
+(Wed Nov 26 12:15:06 2014) delete#16 from sent
+(Wed Nov 26 12:15:06 2014) REPLY:  reqID:4.2.1    accountNum:4201   outcome:InconsistentWithHistory    balance:0.00    
+(Wed Nov 26 12:15:07 2014) UPDATE#17. RECV #18:  type:withdraw   reqID:4.1.9    accountNum:4101   amount:200.00  
+(Wed Nov 26 12:15:07 2014) delete#17 from sent
+(Wed Nov 26 12:15:07 2014) REPLY:  reqID:4.1.9    accountNum:4101   outcome:InconsistentWithHistory    balance:1250.00 
+(Wed Nov 26 12:15:07 2014) UPDATE#18. RECV #18:  type:deposit    reqID:4.2.2    accountNum:4202   amount:20.00   
+(Wed Nov 26 12:15:07 2014) delete#18 from sent
+(Wed Nov 26 12:15:07 2014) REPLY:  reqID:4.2.2    accountNum:4202   outcome:InconsistentWithHistory    balance:40.00   
+(Wed Nov 26 12:15:07 2014) UPDATE#19. RECV #19:  type:deposit    reqID:4.1.7    accountNum:4101   amount:200.00  
+(Wed Nov 26 12:15:07 2014) delete#19 from sent
+(Wed Nov 26 12:15:07 2014) REPLY:  reqID:4.1.7    accountNum:4101   outcome:InconsistentWithHistory    balance:1250.00 
+(Wed Nov 26 12:15:07 2014) UPDATE#20. RECV #19:  type:withdraw   reqID:4.2.2    accountNum:4202   amount:100.00  
+(Wed Nov 26 12:15:07 2014) delete#20 from sent
+(Wed Nov 26 12:15:07 2014) REPLY:  reqID:4.2.2    accountNum:4202   outcome:InconsistentWithHistory    balance:40.00   
+(Wed Nov 26 12:15:08 2014) UPDATE#21. RECV #20:  type:deposit    reqID:4.1.5    accountNum:4101   amount:500.00  
+(Wed Nov 26 12:15:08 2014) UPDATE BALANCE:  type:deposit    reqID:4.1.5    accountNum:4101   amount:500.00   balance:1750.00 
+(Wed Nov 26 12:15:08 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:4.1.5    accountNum:4101  
+(Wed Nov 26 12:15:08 2014) delete#21 from sent
+(Wed Nov 26 12:15:08 2014) REPLY:  reqID:4.1.5    accountNum:4101   outcome:Processed                  balance:1750.00 
+(Wed Nov 26 12:15:08 2014) UPDATE#22. RECV #20:  type:withdraw   reqID:4.2.1    accountNum:4201   amount:20.00   
+(Wed Nov 26 12:15:08 2014) delete#22 from sent
+(Wed Nov 26 12:15:08 2014) REPLY:  reqID:4.2.1    accountNum:4201   outcome:InconsistentWithHistory    balance:0.00    
+(Wed Nov 26 12:15:08 2014) UPDATE#23. RECV #21:  type:deposit    reqID:4.1.7    accountNum:4101   amount:150.00  
+(Wed Nov 26 12:15:08 2014) delete#23 from sent
+(Wed Nov 26 12:15:08 2014) REPLY:  reqID:4.1.7    accountNum:4101   outcome:InconsistentWithHistory    balance:1750.00 
+(Wed Nov 26 12:15:09 2014) UPDATE#24. RECV #22:  type:deposit    reqID:4.1.1    accountNum:4101   amount:50.00   
+(Wed Nov 26 12:15:09 2014) delete#24 from sent
+(Wed Nov 26 12:15:09 2014) REPLY:  reqID:4.1.1    accountNum:4101   outcome:InconsistentWithHistory    balance:1750.00 
+(Wed Nov 26 12:15:09 2014) UPDATE#25. RECV #23:  type:withdraw   reqID:4.1.2    accountNum:4101   amount:150.00  
+(Wed Nov 26 12:15:09 2014) delete#25 from sent
+(Wed Nov 26 12:15:09 2014) REPLY:  reqID:4.1.2    accountNum:4101   outcome:InconsistentWithHistory    balance:1750.00 
+(Wed Nov 26 12:15:10 2014) UPDATE#26. RECV #24:  type:withdraw   reqID:4.1.6    accountNum:4101   amount:150.00  
+(Wed Nov 26 12:15:10 2014) delete#26 from sent
+(Wed Nov 26 12:15:10 2014) REPLY:  reqID:4.1.6    accountNum:4101   outcome:InconsistentWithHistory    balance:1750.00 
+(Wed Nov 26 12:15:10 2014) UPDATE#27. RECV #25:  type:withdraw   reqID:4.1.1    accountNum:4101   amount:150.00  
+(Wed Nov 26 12:15:10 2014) delete#27 from sent
+(Wed Nov 26 12:15:10 2014) REPLY:  reqID:4.1.1    accountNum:4101   outcome:InconsistentWithHistory    balance:1750.00 
+(Wed Nov 26 12:15:11 2014) UPDATE#28. RECV #26:  type:deposit    reqID:4.1.4    accountNum:4101   amount:100.00  
+(Wed Nov 26 12:15:11 2014) delete#28 from sent
+(Wed Nov 26 12:15:11 2014) REPLY:  reqID:4.1.4    accountNum:4101   outcome:InconsistentWithHistory    balance:1750.00 
+(Wed Nov 26 12:15:11 2014) UPDATE#29. RECV #27:  type:deposit    reqID:4.1.8    accountNum:4101   amount:150.00  
+(Wed Nov 26 12:15:11 2014) delete#29 from sent
+(Wed Nov 26 12:15:11 2014) REPLY:  reqID:4.1.8    accountNum:4101   outcome:InconsistentWithHistory    balance:1750.00 
+(Wed Nov 26 12:15:12 2014) RECV #28:  type:getBalance reqID:4.1.1    accountNum:4101  
+(Wed Nov 26 12:15:12 2014) delete#0 from sent
+(Wed Nov 26 12:15:12 2014) REPLY:  reqID:4.1.1    accountNum:4101   outcome:Processed                  balance:1750.00 
+(Wed Nov 26 12:15:12 2014) UPDATE#30. RECV #29:  type:deposit    reqID:4.1.8    accountNum:4101   amount:50.00   
+(Wed Nov 26 12:15:12 2014) delete#30 from sent
+(Wed Nov 26 12:15:12 2014) REPLY:  reqID:4.1.8    accountNum:4101   outcome:InconsistentWithHistory    balance:1750.00 
+(Wed Nov 26 12:15:13 2014) UPDATE#31. RECV #30:  type:deposit    reqID:4.1.1    accountNum:4101   amount:200.00  
+(Wed Nov 26 12:15:13 2014) delete#31 from sent
+(Wed Nov 26 12:15:13 2014) REPLY:  reqID:4.1.1    accountNum:4101   outcome:InconsistentWithHistory    balance:1750.00 

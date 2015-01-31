@@ -1,0 +1,6 @@
+(Mon Nov  3 17:05:58 2014) SEND:  type:deposit    reqID:2.3.3    accountNum:2302   amount:20.00   
+(Mon Nov  3 17:05:59 2014) SEND:  type:withdraw   reqID:2.3.2    accountNum:2302   amount:20.00   
+(Mon Nov  3 17:06:00 2014) SEND:  type:withdraw   reqID:2.3.3    accountNum:2302   amount:40.00   
+(Mon Nov  3 17:06:01 2014) SEND:  type:getBalance reqID:2.3.3    accountNum:2301  
+(Mon Nov  3 17:06:02 2014) SEND:  type:getBalance reqID:2.3.2    accountNum:2302  
+(Mon Nov  3 17:06:04 2014) SEND:  type:deposit    reqID:2.3.3    accountNum:2302   amount:60.00   

@@ -1,0 +1,287 @@
+[
+     {
+        "bank_name" : "BOA",
+        "chain_length" : 2,
+        "clients_num" : 6,
+         "server" :
+        [
+            { "ip" : "127.0.0.1",    "port" : 3011,    "startup_delay" : 0,    "life_time" : "unbounded"},
+            { "ip" : "127.0.0.1",    "port" : 3012,    "startup_delay" : 0,    "life_time" : "unbounded"}
+         ],
+        "client" :
+        [
+            {
+                "ip" : "127.0.0.1",
+                "port" : 5011,
+                "wait_time" : 3,
+                "resend_times" : 5,
+                "whether_resend_newhead" : true,
+                "request" : [
+                    { "seed" : 1, "numReq" : 10, "probGetBalance" : 0.1, "probDeposit" : 0.7,"probWithdraw" : 0.2,"probTransfer" : 0 ,"req_range" : 7, "account_range" : 1, "amount_range":1000, "amount_dis":100 },
+                    { "type" : "transfer",     "reqID" : "1.1.8",    "accountNum" : 1101,   "amount" : 50, "destBank" : 2, "destAccount" : 2101},
+                    { "type" : "transfer",     "reqID" : "1.1.8",    "accountNum" : 1101,   "amount" : 50, "destBank" : 2, "destAccount" : 2101},
+                    { "seed" : 2, "numReq" : 10, "probGetBalance" : 0.1, "probDeposit" : 0.4,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 7, "account_range" : 1, "amount_range":500, "amount_dis":100 },
+                    { "type" : "transfer",     "reqID" : "1.1.9",    "accountNum" : 1101,   "amount" : 30000, "destBank" : 2, "destAccount" : 2101}
+                ]
+            },
+            {
+                "ip" : "127.0.0.1",
+                "port" : 5012,
+                "wait_time" : 3,
+                "resend_times" : 6,
+                "whether_resend_newhead" : true,
+                "request" : [
+                   { "seed" : 3, "numReq" : 10, "probGetBalance" : 0.0, "probDeposit" : 0.5,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 8, "account_range" : 2, "amount_range":250, "amount_dis":50 },
+                   { "seed" : 4, "numReq" : 10, "probGetBalance" : 0.2, "probDeposit" : 0.5,"probWithdraw" : 0.3,"probTransfer" : 0 ,"req_range" : 8, "account_range" : 2, "amount_range":350, "amount_dis":50 }
+                ]
+            },
+            {
+                "ip" : "127.0.0.1",
+                "port" : 5013,
+                "wait_time" : 3,
+                "resend_times" : 6,
+                "whether_resend_newhead" : true,
+                "request" : [
+                   { "seed" : 7, "numReq" : 10, "probGetBalance" : 0.0, "probDeposit" : 0.5,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 8, "account_range" : 2, "amount_range":250, "amount_dis":50 }
+                ]
+            },
+            {
+                "ip" : "127.0.0.1",
+                "port" : 5014,
+                "wait_time" : 3,
+                "resend_times" : 6,
+                "whether_resend_newhead" : true,
+                "request" : [
+                   { "seed" : 8, "numReq" : 10, "probGetBalance" : 0.0, "probDeposit" : 0.5,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 8, "account_range" : 2, "amount_range":250, "amount_dis":50 }
+                ]
+            },
+            {
+                "ip" : "127.0.0.1",
+                "port" : 5015,
+                "wait_time" : 3,
+                "resend_times" : 6,
+                "whether_resend_newhead" : true,
+                "request" : [
+                   { "seed" : 3, "numReq" : 10, "probGetBalance" : 0.0, "probDeposit" : 0.5,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 8, "account_range" : 2, "amount_range":250, "amount_dis":50 }
+                ]
+            },
+            {
+                "ip" : "127.0.0.1",
+                "port" : 5016,
+                "wait_time" : 3,
+                "resend_times" : 6,
+                "whether_resend_newhead" : true,
+                "request" : [
+                   { "seed" : 3, "numReq" : 10, "probGetBalance" : 0.0, "probDeposit" : 0.5,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 8, "account_range" : 2, "amount_range":250, "amount_dis":50 }
+                ]
+            }
+        ]
+     },
+
+
+
+     {
+        "bank_name" : "CITIBANK",
+        "chain_length" : 2,
+        "clients_num" : 2,
+         "server" :
+        [
+            { "ip" : "127.0.0.1",    "port" : 3021,    "startup_delay" : 0,    "life_time" : "unbounded"},
+            { "ip" : "127.0.0.1",    "port" : 3022,    "startup_delay" : 0,    "life_time" : "unbounded"}
+         ],
+        "client" :
+        [
+            {
+                "ip" : "127.0.0.1",
+                "port" : 5021,
+                "wait_time" : 3,
+                "resend_times" : 6,
+                "whether_resend_newhead" : true,
+                "request" : [
+                    { "seed" : 5, "numReq" : 20, "probGetBalance" : 0.0, "probDeposit" : 0.5,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 10, "account_range" : 1, "amount_range":500, "amount_dis":100 },
+                    { "seed" : 6, "numReq" : 20, "probGetBalance" : 0.2, "probDeposit" : 0.3,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 8, "account_range" : 1, "amount_range":200, "amount_dis":50 }
+                ]
+            },
+            {
+                "ip" : "127.0.0.1",
+                "port" : 5022,
+                "wait_time" : 2,
+                "resend_times" : 4,
+                "whether_resend_newhead" : false,
+                "request" : [
+                    { "seed" : 7, "numReq" : 20, "probGetBalance" : 0.1, "probDeposit" : 0.4,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 2, "account_range" : 2, "amount_range":100, "amount_dis":20 }
+                ]
+            }
+        ]
+     },
+
+
+
+
+    {
+        "bank_name" : "CHASE",
+        "chain_length" : 2,
+        "clients_num" : 2,
+         "server" :
+        [
+            { "ip" : "127.0.0.1",    "port" : 3031,    "startup_delay" : 0,    "life_time" : "unbounded"},
+            { "ip" : "127.0.0.1",    "port" : 3032,    "startup_delay" : 0,    "life_time" : "unbounded"}
+         ],
+        "client" :
+        [
+            {
+                "ip" : "127.0.0.1",
+                "port" : 5031,
+                "wait_time" : 4,
+                "resend_times" : 5,
+                "whether_resend_newhead" : true,
+                "request" : [
+                    { "seed" : 1, "numReq" : 10, "probGetBalance" : 0.1, "probDeposit" : 0.7,"probWithdraw" : 0.2,"probTransfer" : 0 ,"req_range" : 7, "account_range" : 1, "amount_range":1000, "amount_dis":100 },
+                    { "type" : "transfer",     "reqID" : "3.1.8",    "accountNum" : 3101,   "amount" : 50, "destBank" : 4, "destAccount" : 4101},
+                    { "type" : "transfer",     "reqID" : "3.1.8",    "accountNum" : 3101,   "amount" : 50, "destBank" : 4, "destAccount" : 4101},
+                    { "seed" : 2, "numReq" : 10, "probGetBalance" : 0.1, "probDeposit" : 0.4,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 7, "account_range" : 1, "amount_range":500, "amount_dis":100 },
+                    { "type" : "transfer",     "reqID" : "3.1.9",    "accountNum" : 3101,   "amount" : 30000, "destBank" : 4, "destAccount" : 4101}
+                ]
+            },
+            {
+                "ip" : "127.0.0.1",
+                "port" : 5032,
+                "wait_time" : 4,
+                "resend_times" : 6,
+                "whether_resend_newhead" : true,
+                "request" : [
+                   { "seed" : 3, "numReq" : 10, "probGetBalance" : 0.0, "probDeposit" : 0.5,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 8, "account_range" : 2, "amount_range":250, "amount_dis":50 },
+                   { "seed" : 4, "numReq" : 10, "probGetBalance" : 0.2, "probDeposit" : 0.5,"probWithdraw" : 0.3,"probTransfer" : 0 ,"req_range" : 8, "account_range" : 2, "amount_range":350, "amount_dis":50 }
+                ]
+            }
+        ]
+     },
+
+
+
+     {
+        "bank_name" : "TD",
+        "chain_length" : 2,
+        "clients_num" : 2,
+         "server" :
+        [
+            { "ip" : "127.0.0.1",    "port" : 3041,    "startup_delay" : 0,    "life_time" : "recv_transfer"},
+            { "ip" : "127.0.0.1",    "port" : 3042,    "startup_delay" : 0,    "life_time" : "unbounded"}
+         ],
+        "client" :
+        [
+            {
+                "ip" : "127.0.0.1",
+                "port" : 5041,
+                "wait_time" : 3,
+                "resend_times" : 6,
+                "whether_resend_newhead" : true,
+                "request" : [
+                    { "seed" : 5, "numReq" : 20, "probGetBalance" : 0.0, "probDeposit" : 0.5,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 10, "account_range" : 1, "amount_range":500, "amount_dis":100 },
+                    { "seed" : 6, "numReq" : 10, "probGetBalance" : 0.2, "probDeposit" : 0.3,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 8, "account_range" : 1, "amount_range":200, "amount_dis":50 }
+                ]
+            },
+            {
+                "ip" : "127.0.0.1",
+                "port" : 5042,
+                "wait_time" : 3,
+                "resend_times" : 4,
+                "whether_resend_newhead" : true,
+                "request" : [
+                    { "seed" : 7, "numReq" : 20, "probGetBalance" : 0.1, "probDeposit" : 0.4,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 2, "account_range" : 2, "amount_range":100, "amount_dis":20 }
+                ]
+            }
+        ]
+     },
+
+
+
+
+
+    {
+        "bank_name" : "SB",
+        "chain_length" : 2,
+        "clients_num" : 2,
+         "server" :
+        [
+            { "ip" : "127.0.0.1",    "port" : 3051,    "startup_delay" : 0,    "life_time" : "unbounded"},
+            { "ip" : "127.0.0.1",    "port" : 3052,    "startup_delay" : 0,    "life_time" : "send_transfer"}
+         ],
+        "client" :
+        [
+            {
+                "ip" : "127.0.0.1",
+                "port" : 5051,
+                "wait_time" : 6,
+                "resend_times" : 5,
+                "whether_resend_newhead" : true,
+                "request" : [
+                    { "seed" : 1, "numReq" : 10, "probGetBalance" : 0.1, "probDeposit" : 0.7,"probWithdraw" : 0.2,"probTransfer" : 0 ,"req_range" : 7, "account_range" : 1, "amount_range":1000, "amount_dis":100 },
+                    { "type" : "transfer",     "reqID" : "5.1.8",    "accountNum" : 5101,   "amount" : 50, "destBank" : 6, "destAccount" : 6101},
+                    { "type" : "transfer",     "reqID" : "5.1.8",    "accountNum" : 5101,   "amount" : 50, "destBank" : 6, "destAccount" : 6101},
+                    { "seed" : 2, "numReq" : 10, "probGetBalance" : 0.1, "probDeposit" : 0.4,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 7, "account_range" : 1, "amount_range":500, "amount_dis":100 },
+                    { "type" : "transfer",     "reqID" : "5.1.9",    "accountNum" : 5101,   "amount" : 30000, "destBank" : 6, "destAccount" : 6101}
+                ]
+            },
+            {
+                "ip" : "127.0.0.1",
+                "port" : 5052,
+                "wait_time" : 3,
+                "resend_times" : 6,
+                "whether_resend_newhead" : true,
+                "request" : [
+                   { "seed" : 3, "numReq" : 10, "probGetBalance" : 0.0, "probDeposit" : 0.5,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 8, "account_range" : 2, "amount_range":250, "amount_dis":50 },
+                   { "seed" : 4, "numReq" : 10, "probGetBalance" : 0.2, "probDeposit" : 0.5,"probWithdraw" : 0.3,"probTransfer" : 0 ,"req_range" : 8, "account_range" : 2, "amount_range":350, "amount_dis":50 }
+                ]
+            }
+        ]
+     },
+
+
+
+     {
+        "bank_name" : "MS",
+        "chain_length" : 2,
+        "clients_num" : 2,
+         "server" :
+        [
+            { "ip" : "127.0.0.1",    "port" : 3061,    "startup_delay" : 0,    "life_time" : "recv_transfer"},
+            { "ip" : "127.0.0.1",    "port" : 3062,    "startup_delay" : 0,    "life_time" : "unbounded"}
+         ],
+        "client" :
+        [
+            {
+                "ip" : "127.0.0.1",
+                "port" : 5061,
+                "wait_time" : 3,
+                "resend_times" : 6,
+                "whether_resend_newhead" : true,
+                "request" : [
+                    { "seed" : 5, "numReq" : 20, "probGetBalance" : 0.0, "probDeposit" : 0.5,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 10, "account_range" : 1, "amount_range":500, "amount_dis":100 },
+                    { "seed" : 6, "numReq" : 10, "probGetBalance" : 0.2, "probDeposit" : 0.3,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 8, "account_range" : 1, "amount_range":200, "amount_dis":50 }
+                ]
+            },
+            {
+                "ip" : "127.0.0.1",
+                "port" : 5062,
+                "wait_time" : 3,
+                "resend_times" : 4,
+                "whether_resend_newhead" : true,
+                "request" : [
+                    { "seed" : 7, "numReq" : 20, "probGetBalance" : 0.1, "probDeposit" : 0.4,"probWithdraw" : 0.5,"probTransfer" : 0 ,"req_range" : 2, "account_range" : 2, "amount_range":100, "amount_dis":20 }
+                ]
+            }
+        ]
+     },
+
+
+
+
+
+     
+     {
+        "master_ip" : "127.0.0.1",
+        "master_port" : 9001
+     }
+
+]

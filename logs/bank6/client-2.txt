@@ -1,0 +1,43 @@
+(Wed Nov 26 12:16:39 2014) bank#6 head:3061, tail:3062
+(Wed Nov 26 12:16:40 2014) send #1:  type:deposit    reqID:6.2.2    accountNum:6202   amount:40.00   
+(Wed Nov 26 12:16:40 2014) recv #1:  reqID:6.2.2    accountNum:6202   outcome:Processed                  balance:40.00   
+(Wed Nov 26 12:16:40 2014) send #2:  type:withdraw   reqID:6.2.1    accountNum:6202   amount:80.00   
+(Wed Nov 26 12:16:40 2014) recv #2:  reqID:6.2.1    accountNum:6202   outcome:InsufficientFunds          balance:40.00   
+(Wed Nov 26 12:16:40 2014) send #3:  type:withdraw   reqID:6.2.1    accountNum:6202   amount:40.00   
+(Wed Nov 26 12:16:41 2014) recv #3:  reqID:6.2.1    accountNum:6202   outcome:InconsistentWithHistory    balance:40.00   
+(Wed Nov 26 12:16:41 2014) send #4:  type:getBalance reqID:6.2.1    accountNum:6201  
+(Wed Nov 26 12:16:41 2014) recv #4:  reqID:6.2.1    accountNum:6201   outcome:Processed                  balance:0.00    
+(Wed Nov 26 12:16:41 2014) send #5:  type:getBalance reqID:6.2.1    accountNum:6202  
+(Wed Nov 26 12:16:42 2014) recv #5:  reqID:6.2.1    accountNum:6202   outcome:Processed                  balance:40.00   
+(Wed Nov 26 12:16:42 2014) send #6:  type:deposit    reqID:6.2.2    accountNum:6202   amount:20.00   
+(Wed Nov 26 12:16:42 2014) recv #6:  reqID:6.2.2    accountNum:6202   outcome:InconsistentWithHistory    balance:40.00   
+(Wed Nov 26 12:16:42 2014) send #7:  type:withdraw   reqID:6.2.1    accountNum:6201   amount:80.00   
+(Wed Nov 26 12:16:43 2014) recv #7:  reqID:6.2.1    accountNum:6201   outcome:InconsistentWithHistory    balance:0.00    
+(Wed Nov 26 12:16:43 2014) send #8:  type:deposit    reqID:6.2.2    accountNum:6202   amount:60.00   
+(Wed Nov 26 12:16:43 2014) recv #8:  reqID:6.2.2    accountNum:6202   outcome:InconsistentWithHistory    balance:40.00   
+(Wed Nov 26 12:16:43 2014) send #9:  type:deposit    reqID:6.2.2    accountNum:6202   amount:20.00   
+(Wed Nov 26 12:16:48 2014) bank#6 head:3062, tail:3062
+(Wed Nov 26 12:16:52 2014) resend #9:  type:deposit    reqID:6.2.2    accountNum:6202   amount:20.00   
+(Wed Nov 26 12:16:52 2014) recv #9:  reqID:6.2.2    accountNum:6202   outcome:InconsistentWithHistory    balance:40.00   
+(Wed Nov 26 12:16:52 2014) send #10:  type:withdraw   reqID:6.2.2    accountNum:6201   amount:40.00   
+(Wed Nov 26 12:16:53 2014) recv #10:  reqID:6.2.2    accountNum:6201   outcome:InconsistentWithHistory    balance:0.00    
+(Wed Nov 26 12:16:53 2014) send #11:  type:deposit    reqID:6.2.2    accountNum:6201   amount:40.00   
+(Wed Nov 26 12:16:53 2014) recv #11:  reqID:6.2.2    accountNum:6201   outcome:InconsistentWithHistory    balance:0.00    
+(Wed Nov 26 12:16:53 2014) send #12:  type:getBalance reqID:6.2.2    accountNum:6202  
+(Wed Nov 26 12:16:54 2014) recv #12:  reqID:6.2.2    accountNum:6202   outcome:Processed                  balance:40.00   
+(Wed Nov 26 12:16:54 2014) send #13:  type:deposit    reqID:6.2.1    accountNum:6201   amount:60.00   
+(Wed Nov 26 12:16:54 2014) recv #13:  reqID:6.2.1    accountNum:6201   outcome:InconsistentWithHistory    balance:0.00    
+(Wed Nov 26 12:16:54 2014) send #14:  type:getBalance reqID:6.2.2    accountNum:6202  
+(Wed Nov 26 12:16:55 2014) recv #14:  reqID:6.2.2    accountNum:6202   outcome:Processed                  balance:40.00   
+(Wed Nov 26 12:16:55 2014) send #15:  type:deposit    reqID:6.2.2    accountNum:6201   amount:80.00   
+(Wed Nov 26 12:16:55 2014) recv #15:  reqID:6.2.2    accountNum:6201   outcome:InconsistentWithHistory    balance:0.00    
+(Wed Nov 26 12:16:55 2014) send #16:  type:withdraw   reqID:6.2.1    accountNum:6202   amount:60.00   
+(Wed Nov 26 12:16:56 2014) recv #16:  reqID:6.2.1    accountNum:6202   outcome:InconsistentWithHistory    balance:40.00   
+(Wed Nov 26 12:16:56 2014) send #17:  type:deposit    reqID:6.2.1    accountNum:6201   amount:60.00   
+(Wed Nov 26 12:16:56 2014) recv #17:  reqID:6.2.1    accountNum:6201   outcome:InconsistentWithHistory    balance:0.00    
+(Wed Nov 26 12:16:56 2014) send #18:  type:deposit    reqID:6.2.2    accountNum:6202   amount:20.00   
+(Wed Nov 26 12:16:57 2014) recv #18:  reqID:6.2.2    accountNum:6202   outcome:InconsistentWithHistory    balance:40.00   
+(Wed Nov 26 12:16:57 2014) send #19:  type:withdraw   reqID:6.2.2    accountNum:6202   amount:100.00  
+(Wed Nov 26 12:16:57 2014) recv #19:  reqID:6.2.2    accountNum:6202   outcome:InconsistentWithHistory    balance:40.00   
+(Wed Nov 26 12:16:57 2014) send #20:  type:withdraw   reqID:6.2.1    accountNum:6201   amount:20.00   
+(Wed Nov 26 12:16:58 2014) recv #20:  reqID:6.2.1    accountNum:6201   outcome:InconsistentWithHistory    balance:0.00    

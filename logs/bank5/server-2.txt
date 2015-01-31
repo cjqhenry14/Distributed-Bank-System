@@ -1,0 +1,100 @@
+(Wed Nov 26 12:16:36 2014) server 2 start! bank name:SB       chain length:2       
+(Wed Nov 26 12:16:36 2014) got connection with master
+(Wed Nov 26 12:16:36 2014) got connection from before: 3051
+(Wed Nov 26 12:16:36 2014) get all from pre, i am new tail
+(Wed Nov 26 12:16:39 2014) RECV #1:  type:getBalance reqID:5.1.7    accountNum:5101  
+(Wed Nov 26 12:16:39 2014) REPLY:  reqID:5.1.7    accountNum:5101   outcome:Processed                  balance:0.00    
+(Wed Nov 26 12:16:39 2014) UPDATE#1. RECV #2:  type:deposit    reqID:5.1.2    accountNum:5101   amount:500.00  
+(Wed Nov 26 12:16:39 2014) UPDATE BALANCE:  type:deposit    reqID:5.1.2    accountNum:5101   amount:500.00   balance:500.00  
+(Wed Nov 26 12:16:39 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:5.1.2    accountNum:5101  
+(Wed Nov 26 12:16:39 2014) delete#1 from sent
+(Wed Nov 26 12:16:39 2014) send ack (5.1.2) to pre server
+(Wed Nov 26 12:16:39 2014) REPLY:  reqID:5.1.2    accountNum:5101   outcome:Processed                  balance:500.00  
+(Wed Nov 26 12:16:39 2014) UPDATE#2. RECV #1:  type:deposit    reqID:5.2.8    accountNum:5202   amount:50.00   
+(Wed Nov 26 12:16:39 2014) UPDATE BALANCE:  type:deposit    reqID:5.2.8    accountNum:5202   amount:50.00    balance:50.00   
+(Wed Nov 26 12:16:39 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:5.2.8    accountNum:5202  
+(Wed Nov 26 12:16:39 2014) delete#2 from sent
+(Wed Nov 26 12:16:39 2014) send ack (5.2.8) to pre server
+(Wed Nov 26 12:16:39 2014) REPLY:  reqID:5.2.8    accountNum:5202   outcome:Processed                  balance:50.00   
+(Wed Nov 26 12:16:39 2014) UPDATE#3. RECV #2:  type:deposit    reqID:5.2.5    accountNum:5201   amount:150.00  
+(Wed Nov 26 12:16:39 2014) UPDATE BALANCE:  type:deposit    reqID:5.2.5    accountNum:5201   amount:150.00   balance:150.00  
+(Wed Nov 26 12:16:39 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:5.2.5    accountNum:5201  
+(Wed Nov 26 12:16:39 2014) delete#3 from sent
+(Wed Nov 26 12:16:39 2014) send ack (5.2.5) to pre server
+(Wed Nov 26 12:16:39 2014) REPLY:  reqID:5.2.5    accountNum:5201   outcome:Processed                  balance:150.00  
+(Wed Nov 26 12:16:39 2014) UPDATE#4. RECV #3:  type:deposit    reqID:5.1.3    accountNum:5101   amount:100.00  
+(Wed Nov 26 12:16:39 2014) UPDATE BALANCE:  type:deposit    reqID:5.1.3    accountNum:5101   amount:100.00   balance:600.00  
+(Wed Nov 26 12:16:39 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:5.1.3    accountNum:5101  
+(Wed Nov 26 12:16:39 2014) delete#4 from sent
+(Wed Nov 26 12:16:39 2014) send ack (5.1.3) to pre server
+(Wed Nov 26 12:16:39 2014) REPLY:  reqID:5.1.3    accountNum:5101   outcome:Processed                  balance:600.00  
+(Wed Nov 26 12:16:39 2014) UPDATE#5. RECV #3:  type:withdraw   reqID:5.2.1    accountNum:5202   amount:200.00  
+(Wed Nov 26 12:16:39 2014) delete#5 from sent
+(Wed Nov 26 12:16:39 2014) send ack (5.2.1) to pre server
+(Wed Nov 26 12:16:39 2014) REPLY:  reqID:5.2.1    accountNum:5202   outcome:InsufficientFunds          balance:50.00   
+(Wed Nov 26 12:16:40 2014) UPDATE#6. RECV #4:  type:withdraw   reqID:5.1.6    accountNum:5101   amount:800.00  
+(Wed Nov 26 12:16:40 2014) delete#6 from sent
+(Wed Nov 26 12:16:40 2014) send ack (5.1.6) to pre server
+(Wed Nov 26 12:16:40 2014) REPLY:  reqID:5.1.6    accountNum:5101   outcome:InsufficientFunds          balance:600.00  
+(Wed Nov 26 12:16:40 2014) UPDATE#7. RECV #4:  type:withdraw   reqID:5.2.7    accountNum:5201   amount:100.00  
+(Wed Nov 26 12:16:40 2014) UPDATE BALANCE:  type:withdraw   reqID:5.2.7    accountNum:5201   amount:100.00   balance:50.00   
+(Wed Nov 26 12:16:40 2014) APPEND PROCESSED TRANS:  type:withdraw   reqID:5.2.7    accountNum:5201  
+(Wed Nov 26 12:16:40 2014) delete#7 from sent
+(Wed Nov 26 12:16:40 2014) send ack (5.2.7) to pre server
+(Wed Nov 26 12:16:40 2014) REPLY:  reqID:5.2.7    accountNum:5201   outcome:Processed                  balance:50.00   
+(Wed Nov 26 12:16:40 2014) UPDATE#8. RECV #5:  type:deposit    reqID:5.1.4    accountNum:5101   amount:100.00  
+(Wed Nov 26 12:16:40 2014) UPDATE BALANCE:  type:deposit    reqID:5.1.4    accountNum:5101   amount:100.00   balance:700.00  
+(Wed Nov 26 12:16:40 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:5.1.4    accountNum:5101  
+(Wed Nov 26 12:16:40 2014) delete#8 from sent
+(Wed Nov 26 12:16:40 2014) send ack (5.1.4) to pre server
+(Wed Nov 26 12:16:40 2014) REPLY:  reqID:5.1.4    accountNum:5101   outcome:Processed                  balance:700.00  
+(Wed Nov 26 12:16:40 2014) UPDATE#9. RECV #5:  type:withdraw   reqID:5.2.5    accountNum:5202   amount:200.00  
+(Wed Nov 26 12:16:40 2014) delete#9 from sent
+(Wed Nov 26 12:16:40 2014) send ack (5.2.5) to pre server
+(Wed Nov 26 12:16:40 2014) REPLY:  reqID:5.2.5    accountNum:5202   outcome:InconsistentWithHistory    balance:50.00   
+(Wed Nov 26 12:16:41 2014) RECV #6:  type:getBalance reqID:5.1.1    accountNum:5101  
+(Wed Nov 26 12:16:41 2014) REPLY:  reqID:5.1.1    accountNum:5101   outcome:Processed                  balance:700.00  
+(Wed Nov 26 12:16:41 2014) UPDATE#10. RECV #6:  type:withdraw   reqID:5.2.2    accountNum:5202   amount:50.00   
+(Wed Nov 26 12:16:41 2014) UPDATE BALANCE:  type:withdraw   reqID:5.2.2    accountNum:5202   amount:50.00    balance:0.00    
+(Wed Nov 26 12:16:41 2014) APPEND PROCESSED TRANS:  type:withdraw   reqID:5.2.2    accountNum:5202  
+(Wed Nov 26 12:16:41 2014) delete#10 from sent
+(Wed Nov 26 12:16:41 2014) send ack (5.2.2) to pre server
+(Wed Nov 26 12:16:41 2014) REPLY:  reqID:5.2.2    accountNum:5202   outcome:Processed                  balance:0.00    
+(Wed Nov 26 12:16:41 2014) UPDATE#11. RECV #7:  type:deposit    reqID:5.1.3    accountNum:5101   amount:1000.00 
+(Wed Nov 26 12:16:41 2014) delete#11 from sent
+(Wed Nov 26 12:16:41 2014) send ack (5.1.3) to pre server
+(Wed Nov 26 12:16:41 2014) REPLY:  reqID:5.1.3    accountNum:5101   outcome:InconsistentWithHistory    balance:700.00  
+(Wed Nov 26 12:16:41 2014) UPDATE#12. RECV #7:  type:withdraw   reqID:5.2.4    accountNum:5201   amount:150.00  
+(Wed Nov 26 12:16:41 2014) delete#12 from sent
+(Wed Nov 26 12:16:41 2014) send ack (5.2.4) to pre server
+(Wed Nov 26 12:16:41 2014) REPLY:  reqID:5.2.4    accountNum:5201   outcome:InsufficientFunds          balance:50.00   
+(Wed Nov 26 12:16:42 2014) UPDATE#13. RECV #8:  type:deposit    reqID:5.1.4    accountNum:5101   amount:800.00  
+(Wed Nov 26 12:16:42 2014) delete#13 from sent
+(Wed Nov 26 12:16:42 2014) send ack (5.1.4) to pre server
+(Wed Nov 26 12:16:42 2014) REPLY:  reqID:5.1.4    accountNum:5101   outcome:InconsistentWithHistory    balance:700.00  
+(Wed Nov 26 12:16:42 2014) UPDATE#14. RECV #8:  type:deposit    reqID:5.2.1    accountNum:5202   amount:150.00  
+(Wed Nov 26 12:16:42 2014) delete#14 from sent
+(Wed Nov 26 12:16:42 2014) send ack (5.2.1) to pre server
+(Wed Nov 26 12:16:42 2014) REPLY:  reqID:5.2.1    accountNum:5202   outcome:InconsistentWithHistory    balance:0.00    
+(Wed Nov 26 12:16:42 2014) UPDATE#15. RECV #9:  type:deposit    reqID:5.1.6    accountNum:5101   amount:100.00  
+(Wed Nov 26 12:16:42 2014) delete#15 from sent
+(Wed Nov 26 12:16:42 2014) send ack (5.1.6) to pre server
+(Wed Nov 26 12:16:42 2014) REPLY:  reqID:5.1.6    accountNum:5101   outcome:InconsistentWithHistory    balance:700.00  
+(Wed Nov 26 12:16:43 2014) UPDATE#16. RECV #9:  type:deposit    reqID:5.2.4    accountNum:5202   amount:100.00  
+(Wed Nov 26 12:16:43 2014) delete#16 from sent
+(Wed Nov 26 12:16:43 2014) send ack (5.2.4) to pre server
+(Wed Nov 26 12:16:43 2014) REPLY:  reqID:5.2.4    accountNum:5202   outcome:InconsistentWithHistory    balance:0.00    
+(Wed Nov 26 12:16:43 2014) UPDATE#17. RECV #10:  type:deposit    reqID:5.1.5    accountNum:5101   amount:1000.00 
+(Wed Nov 26 12:16:43 2014) UPDATE BALANCE:  type:deposit    reqID:5.1.5    accountNum:5101   amount:1000.00  balance:1700.00 
+(Wed Nov 26 12:16:43 2014) APPEND PROCESSED TRANS:  type:deposit    reqID:5.1.5    accountNum:5101  
+(Wed Nov 26 12:16:43 2014) delete#17 from sent
+(Wed Nov 26 12:16:43 2014) send ack (5.1.5) to pre server
+(Wed Nov 26 12:16:43 2014) REPLY:  reqID:5.1.5    accountNum:5101   outcome:Processed                  balance:1700.00 
+(Wed Nov 26 12:16:43 2014) UPDATE#18. RECV #10:  type:withdraw   reqID:5.2.1    accountNum:5202   amount:200.00  
+(Wed Nov 26 12:16:43 2014) delete#18 from sent
+(Wed Nov 26 12:16:43 2014) send ack (5.2.1) to pre server
+(Wed Nov 26 12:16:43 2014) REPLY:  reqID:5.2.1    accountNum:5202   outcome:InsufficientFunds          balance:0.00    
+(Wed Nov 26 12:16:43 2014) UPDATE#19. RECV #11:  type:transfer   reqID:5.1.8    accountNum:5101   amount:50.00    destBank:6   destAccount:6101  
+(Wed Nov 26 12:16:43 2014) UPDATE BALANCE:  type:transfer   reqID:5.1.8    accountNum:5101   amount:50.00    balance:1650.00 
+(Wed Nov 26 12:16:43 2014) APPEND PROCESSED TRANS:  type:transfer   reqID:5.1.8    accountNum:5101  
+(Wed Nov 26 12:16:43 2014) send transfer req 5.1.8 to dest bank 6
